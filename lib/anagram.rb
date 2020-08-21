@@ -15,8 +15,8 @@ def match (array)
     else
       return []
     end
-      @anagram_results
   end
+  @anagram_results
 end
 
 
