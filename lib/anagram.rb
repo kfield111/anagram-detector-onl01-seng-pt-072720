@@ -12,8 +12,6 @@ def match (array)
   array.each do |words|
     if (word.each_char.sort == words.each_char.sort)
       @anagram_results << words
-    # else
-    #   return []
     end
   end
   @anagram_results
