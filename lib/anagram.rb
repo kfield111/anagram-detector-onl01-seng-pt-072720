@@ -11,6 +11,7 @@ def match (array)
       return word
     end
   end
+  word
 end
 
 
