@@ -1,6 +1,8 @@
 class Anagram
   attr_reader :word
 
+@@anagram_results = []
+
   def initialize(word)
     @word = word
   end
@@ -8,12 +10,12 @@ class Anagram
 def match (array)
   array.detect do |words|
     if (words.chars - word.chars).empty?
-      return words
+      @@anagram_results << words
     else
       return []
     end
   end
-  word
+  @@anagram_results
 end
 
 
