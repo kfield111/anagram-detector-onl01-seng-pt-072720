@@ -12,6 +12,7 @@ def match (array)
   array.each do |words|
     if (words.each_char.sort == word.each_char.sort)
       @@anagram_results << words
+      binding.pry
     else
       return []
     end
