@@ -9,6 +9,8 @@ def match (array)
   array.detect do |words|
     if (words == word)
       return word
+    else
+      return []
     end
   end
   word
