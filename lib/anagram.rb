@@ -9,7 +9,7 @@ class Anagram
 
 def match (array)
   anagram_results = []
-  array.each do |words|
+  array.detect do |words|
     if (words.each_char.sort == word.each_char.sort)
       anagram_results << words
     else
