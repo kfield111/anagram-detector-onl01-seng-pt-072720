@@ -8,7 +8,7 @@ class Anagram
   end
 
 def match (array)
-  anagram_results
+  anagram_results = []
   array.detect do |words|
     if (words.each_char.sort == word.each_char.sort)
       anagram_results << words
