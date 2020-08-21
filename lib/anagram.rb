@@ -7,7 +7,7 @@ class Anagram
 
 def match (array)
   array.detect do |words|
-    if (words == word)
+    if (words.all? == word.all? { |e| e.join })
       return word
     else
       return []
