@@ -8,7 +8,7 @@ class Anagram
 def match (array)
   array.detect do |words|
     if (words.char - word.char).empty?
-      return word
+      return words
     else
       return []
     end
